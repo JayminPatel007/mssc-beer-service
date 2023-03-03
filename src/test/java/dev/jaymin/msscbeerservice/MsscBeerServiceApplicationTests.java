@@ -8,7 +8,6 @@ class MsscBeerServiceApplicationTests {
 
 	@Test
 	void contextLoads() {
-		assert true;
 	}
 
 }

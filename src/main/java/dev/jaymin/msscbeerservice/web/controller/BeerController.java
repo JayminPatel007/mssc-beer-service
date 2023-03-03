@@ -13,7 +13,7 @@ public class BeerController {
 
 
     @GetMapping("/{beerId}")
-    public ResponseEntity<BeerDto> handleGetBeerById(@PathVariable("BeerId") UUID beerId) {
+    public ResponseEntity<BeerDto> handleGetBeerById(@PathVariable("beerId") UUID beerId) {
 
         //todo impl
         return new ResponseEntity<>(BeerDto.builder().build(), HttpStatus.OK);
