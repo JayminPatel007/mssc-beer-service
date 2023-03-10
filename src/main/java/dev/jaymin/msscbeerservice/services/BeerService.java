@@ -8,7 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import java.util.UUID;
 
 public interface BeerService {
-    BeerDto getById(UUID beerId);
+    BeerDto getById(UUID beerId, boolean showInventoryOnHand);
 
     BeerDto createNewBeer(BeerDto beerDto);
 
@@ -16,5 +16,5 @@ public interface BeerService {
 
     void deleteBeerById(UUID beerId);
 
-    BeerPageList listBeers(String beerName, BeerStyle beerStyle, PageRequest pageRequest);
+    BeerPageList listBeers(String beerName, BeerStyle beerStyle, PageRequest pageRequest, boolean showInventoryOnHand);
 }
